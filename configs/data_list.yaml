@@ -2,10 +2,4 @@ split2:
     train_data_path: /data/ssd1/tangshuai/domain/protocol_split2_train/annotations/split2_train.txt
     val_data_path: /data/ssd1/tangshuai/domain/protocol_split2_val/annotations/split2_val.txt
     test_data_path: /data/ssd1/tangshuai/domain/protocol_split2_test/annotations/split2_test_new.txt
-    out_data_path: /data/ssd1/tangshuai/domain/protocol_split2_test/annotations/split2_test_out_new.txt
-
-split5:
-    train_data_path: /data/ssd1/tangshuai/domain/protocol_split5_train/annotations/split5_train.txt
-    val_data_path: /data/ssd1/tangshuai/domain/protocol_split5_val/annotations/split5_val.txt
-    test_data_path: /data/ssd1/tangshuai/domain/protocol_split5_test/annotations/split5_test.txt
-    out_data_path: /data/ssd1/tangshuai/domain/protocol_split2_test/annotations/split2_test_out_new.txt
+    out_data_path: /data/ssd1/tangshuai/domain/protocol_split2_test/annotations/split2_test_out_new.txt # not used

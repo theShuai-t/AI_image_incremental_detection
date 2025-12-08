@@ -869,27 +869,4 @@ def _JD_loss(logit1, logit2, T):
 def distance(p1, p2):
     return np.sqrt(np.sum((p1 - p2) ** 2))
 
-def FPS(sample, num):
-    '''sample:采样点云数据,
-    num:需要采样的数据点个数'''
-    n = sample.shape[0]
-    center = np.mean(sample, axis=0)  # 点云重心
-    select_p = []  # 储存采集点索引
-    L = []
-    for i in range(n):
-        L.append(distance(sample[i], center))
-    p0 = np.argmax(L)
-    select_p.append(p0)  # 选距离重心最远点p0
-    L = []
-    for i in range(n):
-        L.append(distance(p0, sample[i]))
-    select_p.append(np.argmax(L))
-    for i in range(num - 2):
-        for p in range(n):
-            d = distance(sample[select_p[-1]], sample[p])
-            if d <= L[p]:
-                L[p] = d
-        select_p.append(np.argmax(L))
-    return select_p, sample[select_p]
-
 
