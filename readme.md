@@ -1,4 +1,4 @@
-##  Towards Extensible Detection of AI-Generated Images via Content-Agnostic Adapter-Based Category-Aware Incremental Learning
+#  Towards Extensible Detection of AI-Generated Images via Content-Agnostic Adapter-Based Category-Aware Incremental Learning
 This is the official code for this article.
 [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10908386)
 
