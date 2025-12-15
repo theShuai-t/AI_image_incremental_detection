@@ -49,7 +49,7 @@ when loading checkpoints for testing, modify the trained_path in configs/vit_xce
 @article{tang2025towards,
   title={Towards Extensible Detection of AI-Generated Images via Content-Agnostic Adapter-Based Category-Aware Incremental Learning},
   author={Tang, Shuai and He, Peisong and Li, Haoliang and Wang, Wei and Jiang, Xinghao and Zhao, Yao},
-  journal=IEEE_J_IFS,
+  journal={IEEE Trans. Inf. Forensics Security},
   volume = {20},
   pages = {2883-2898},
   year={Feb. 2025},
