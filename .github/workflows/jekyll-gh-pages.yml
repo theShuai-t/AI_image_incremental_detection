@@ -37,12 +37,10 @@ jobs:
           BING='<meta name="msvalidate.01" content="381E84BDF43CCD03833EBCBB60EE57B3" />'
 
           find ./_site -name "*.html" | while read -r file; do
-            # 注入 Google（若不存在）
             if ! grep -q "google-site-verification" "$file"; then
               sed -i "s|</head>|$GOOGLE\n</head>|" "$file"
             fi
 
-            # 注入 Bing / Edge（若不存在）
             if ! grep -q "msvalidate.01" "$file"; then
               sed -i "s|</head>|$BING\n</head>|" "$file"
             fi
